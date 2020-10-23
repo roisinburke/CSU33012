@@ -1,8 +1,9 @@
 
 # This is a generalized example, not specific to a test framework
 import unittest
-import LCA
-class LCApyTest(unittest, LCA):
+from LCA import LCA
+
+class LCApyTest():
 
     def test_first(self):
 

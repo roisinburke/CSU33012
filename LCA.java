@@ -1,8 +1,7 @@
-public class BST {
+public class LCA {
 
-    public static void main(String args[])
-    {
-        BST tree = new BST();
+    public static void main(String args[]) {
+        LCA tree = new LCA();
         tree.root = new Node(1);
         tree.root.left = new Node(2);
         tree.root.right = new Node(3);
