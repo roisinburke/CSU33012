@@ -3,7 +3,7 @@
 import unittest
 import LCA
 
-class LCApyTest(unittest.TestCase):
+class test_LCA(unittest.TestCase):
 
     def test_lca4_5(self):
         self.assertEqual(LCA.findLCA(LCA.root, 4, 5).key, 2)
