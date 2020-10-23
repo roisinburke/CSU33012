@@ -2,7 +2,7 @@
 public class LCAJavaTest {
     @Test
     public void firstTest(){
-        BST tree = new BST();
+        LCA tree = new LCA();
         tree.root = new Node(1);
         tree.root.left = new Node(2);
         tree.root.right = new Node(3);
@@ -20,13 +20,13 @@ public class LCAJavaTest {
         expected = 2;
         Assert.assertEquals("LCA(2, 4) = ", expected, tree.findLCA(2, 4).data);
 
-        tree = new BST();
+        tree = new LCA();
         tree.root = new Node(1);
         Assert.assertEquals(1, tree.findLCA(1, 3).data);
     }
     @Test
     public void testNull(){
-        BST tree = new BST();
+        LCA tree = new LCA();
         Assert.assertEquals(null, tree.findLCA(1, 2));
     }
 }
