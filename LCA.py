@@ -1,8 +1,8 @@
 # Python program to find LCA of n1 and n2 using one 
 # traversal of Binary tree 
-  
+
 # A binary tree node 
-class Node: 
+class LCA: 
       
     # Constructor to create a new tree node 
     def __init__(self, key): 
@@ -43,13 +43,13 @@ def findLCA(root, n1, n2):
 # Driver program to test above function 
   
 # Let us create a binary tree given in the above example 
-root = Node(1) 
-root.left = Node(2) 
-root.right = Node(3) 
-root.left.left = Node(4) 
-root.left.right = Node(5) 
-root.right.left = Node(6) 
-root.right.right = Node(7) 
+root = LCA(1) 
+root.left = LCA(2) 
+root.right = LCA(3) 
+root.left.left = LCA(4) 
+root.left.right = LCA(5) 
+root.right.left = LCA(6) 
+root.right.right = LCA(7) 
 
 print ("LCA(4,5) = ", findLCA(root, 4, 5).key) 
 print ("LCA(4,6) = ", findLCA(root, 4, 6).key) 
