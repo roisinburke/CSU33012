@@ -1,5 +1,3 @@
-
-# This is a generalized example, not specific to a test framework
 import unittest
 import LCA
 

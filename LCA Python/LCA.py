@@ -1,10 +1,6 @@
-# Python program to find LCA of n1 and n2 using one 
-# traversal of Binary tree 
 
-# A binary tree node 
 class LCA: 
       
-    # Constructor to create a new tree node 
     def __init__(self, key): 
         self.key = key  
         self.left = None
@@ -38,11 +34,7 @@ def findLCA(root, n1, n2):
   
     # Otherwise check if left subtree or right subtree is LCA 
     return left_lca if left_lca is not None else right_lca 
-  
-  
-# Driver program to test above function 
-  
-# Let us create a binary tree given in the above example 
+
 root = LCA(1) 
 root.left = LCA(2) 
 root.right = LCA(3) 
